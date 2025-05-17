@@ -1,1 +1,5 @@
 .venv/
+dataset/*/tiles*
+notebook/train_outputs
+notebook/eval
+notebook/sample_data/tile*

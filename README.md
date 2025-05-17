@@ -1,5 +1,5 @@
 # PalmOilDetectree2
-Palm Oil Tree Detection from Google Earth Satellite Imagery with [Detectree2](https://github.com/PatBall1/detectree2)
+Palm Oil Tree Canopy Coverage Detection from Google Earth Satellite Imagery with [Detectree2](https://github.com/PatBall1/detectree2)
 
 
 ## Palm oil trees in Malaysia dataset for detectree2
@@ -7,7 +7,6 @@ Palm Oil Tree Detection from Google Earth Satellite Imagery with [Detectree2](ht
 - CRS is EPSG:32647 - WGS84 / UTM Zone 47N
 - RGB is Google Earth image of 1920 x 1080 resolution taken at 10m scale. (2D mode)
 - Monitor of PC when taking screenshot is 2560 x 1440 (16:9)
-
 
 | Folder Name | Lat Lon | Imagery from the dates (from Google Earth) | Feature Size |
 |-------------|---------|---------------------------------| ------------------------ |
@@ -22,10 +21,12 @@ Palm Oil Tree Detection from Google Earth Satellite Imagery with [Detectree2](ht
 | ZenxinKluang_Site4 | 1°57'26"N 103°12'41"E | 2/5/2024 | 220
 | ZenxinKluang_Site5 | 1°57'38"N 103°12'59"E | 2/5/2024 | 157
 
+- Only 1 class of mature palm oil tress currently. 
+- For multiclass: Add your own class for young palm oil tree or other palm based trees such as coconuts or red dates. 
 
 ## Get started
 
-We will be using python venv and jupyter notebook. )
+We will be using python venv and jupyter notebook.
 
 ```
 python -m venv .venv
@@ -34,3 +35,10 @@ source .venv/bin/activate
 
 Afterwards follow the instructions in the [notebooks](./notebook/).
 Scripts are based on the following [tutorial](https://patball1.github.io/detectree2/tutorial.html).
+
+
+## Prediction on wild
+
+| Original | Prediction | Filtered |
+|----------|------------|----------|
+| ![original](./notebook/sample_data/random_oilpalm.png) | ![predict](./notebook/sample_data/crowns_overlay.png) | ![predict](./notebook/sample_data/filtered_crowns_overlay.png) |
