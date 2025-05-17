@@ -2,4 +2,4 @@
 dataset/*/tiles*
 notebook/train_outputs
 notebook/eval
-notebook/sample_data/tile*
+notebook/sample_data*/tile*

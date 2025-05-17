@@ -42,3 +42,4 @@ Scripts are based on the following [tutorial](https://patball1.github.io/detectr
 | Original | Prediction | Filtered |
 |----------|------------|----------|
 | ![original](./notebook/sample_data/random_oilpalm.png) | ![predict](./notebook/sample_data/crowns_overlay.png) | ![predict](./notebook/sample_data/filtered_crowns_overlay.png) |
+| ![original2](./notebook/sample_data2/random_oilpalm.png) | ![predict2](./notebook/sample_data2/crowns_overlay.png) | ![predict2](./notebook/sample_data2/filtered_crowns_overlay.png) |
