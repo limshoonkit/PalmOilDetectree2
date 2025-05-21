@@ -51,3 +51,27 @@ Scripts are based on the following [tutorial](https://patball1.github.io/detectr
 
 ### 2. Add, Edit, Remove crown/features and export to new Geopackage (.gpkg)
 ![manipulate_map](./media/interactive_map2.png)
+
+## QnA
+1. Why not directly ask any VLM to identify the tress? 
+```
+Technically its possible, but we need to further modified it to make it suitable for our usecase. 
+As detectree2 directly output coordinates in latlon, it is easier to work with using geospatial packages.
+A way to integrate VLM in this case is to extract the points of each trees in pixels and calculate the offset from the origin. 
+Given that we know that geolocation and the resolution of the satellite image, we can estimate the coordinate of each tree.
+```
+![original0](./dataset/IskandarPuteri_Site1/IskandarPuteri_Site1.png)
+
+```
+Prompt: 
+This is a google earth image of an oil palm field. Please mark a red dot on all the oil palm trees.
+``` 
+![prompt_image_1](https://github.com/user-attachments/assets/850b564b-4a19-4074-af7d-997236ec43f6)
+
+```
+Prompt:
+This is a google earth image of an oil palm field.
+Please segment all the oil palm trees by drawing a boundary over the crown.
+```
+![prompt_image_2](https://github.com/user-attachments/assets/2e96d976-0a67-40be-bc16-bfaa61d77b44)
+
