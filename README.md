@@ -52,6 +52,14 @@ Scripts are based on the following [tutorial](https://patball1.github.io/detectr
 ### 2. Add, Edit, Remove crown/features and export to new Geopackage (.gpkg)
 ![manipulate_map](./media/interactive_map2.png)
 
+## Path Planning
+
+### 1. TSP with google OR tool
+![tsp](./media/tsp.gif)
+
+### 2. TSP with grid based A star
+![tsp_w_astar](./media/tsp_w_astar.gif)
+
 ## QnA
 1. Why not directly ask any VLM to identify the tress? 
 ```
@@ -60,7 +68,7 @@ As detectree2 directly output coordinates in latlon, it is easier to work with u
 A way to integrate VLM in this case is to extract the points of each trees in pixels and calculate the offset from the origin. 
 Given that we know that geolocation and the resolution of the satellite image, we can estimate the coordinate of each tree.
 ```
-![original0](./dataset/IskandarPuteri_Site1/IskandarPuteri_Site1.png)
+<img src="./dataset/IskandarPuteri_Site1/IskandarPuteri_Site1.png" width="640" height="400">
 
 ```
 Prompt: 
