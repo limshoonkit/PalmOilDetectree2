@@ -52,6 +52,16 @@ Scripts are based on the following [tutorial](https://patball1.github.io/detectr
 ### 2. Add, Edit, Remove crown/features and export to new Geopackage (.gpkg)
 ![manipulate_map](./media/interactive_map2.png)
 
+## Scene Reconstruction
+We use [InstantMesh](https://github.com/TencentARC/InstantMesh) and [open3d](https://github.com/isl-org/Open3D) to generate a voxelized mock map of the oil palm field.
+
+| Map          | Sample |
+|--------------|--------|
+| 2D Occupancy | <img src="./notebook/sample_data/occupancy_map.png" width="640" height="400"> |
+| 3D Voxel     | <img src="./media/voxelized_scene.png" width="640" height="400"> |
+
+
+
 ## Path Planning
 
 ### 1. TSP with google OR tool
