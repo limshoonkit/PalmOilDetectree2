@@ -55,10 +55,11 @@ Scripts are based on the following [tutorial](https://patball1.github.io/detectr
 ## Scene Reconstruction
 We use [InstantMesh](https://github.com/TencentARC/InstantMesh) and [open3d](https://github.com/isl-org/Open3D) to generate a voxelized mock map of the oil palm field.
 
-| Map          | Sample |
-|--------------|--------|
-| 2D Occupancy | <img src="./notebook/sample_data/occupancy_map.png" width="640" height="400"> |
-| 3D Voxel     | <img src="./media/voxelized_scene.png" width="640" height="400"> |
+| Map            | Sample |
+|----------------|--------|
+| 2D Occupancy   | <img src="./notebook/sample_data/occupancy_map.png" width="640" height="400"> |
+| 3D PointCloud  | <img src="./media/pcd_scene.png" width="640" height="400"> |
+| 3D Voxel       | <img src="./media/voxelized_scene.png" width="640" height="400"> |
 
 
 
