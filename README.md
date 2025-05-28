@@ -71,6 +71,10 @@ We use [InstantMesh](https://github.com/TencentARC/InstantMesh) and [open3d](htt
 ### 2. TSP with grid based A star
 ![tsp_w_astar](./media/tsp_w_astar.gif)
 
+### 3. Exported Waypoint
+| A*   | Refined |
+|------|---------|
+| <img src="./media/astar_wp.png" width="640" height="400"> | <img src="./media/refined_wp.png" width="640" height="400">
 ## QnA
 1. Why not directly ask any VLM to identify the tress? 
 ```
