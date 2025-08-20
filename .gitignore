@@ -3,3 +3,6 @@ dataset/*/tiles*
 notebook/train_outputs
 notebook/eval
 notebook/sample_data*/tile*
+notebook/mosti_site*/tile*
+notebook/sample_data*/filtered*
+notebook/mosti_site*/filtered*
