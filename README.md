@@ -4,7 +4,7 @@ Palm Oil Tree Canopy Coverage Detection from Google Earth Satellite Imagery with
 
 ## Palm oil trees in Malaysia dataset for detectree2
 
-- CRS is EPSG:32647 - WGS84 / UTM Zone 47N
+- CRS is EPSG:32647 - WGS84 / UTM Zone 47N or EPSG:32648 - WGS84 / UTM Zone 48N
 - RGB is Google Earth image of 1920 x 1080 resolution taken at 10m scale. (2D mode)
 - Monitor of PC when taking screenshot is 2560 x 1440 (16:9)
 
@@ -75,7 +75,7 @@ We use [InstantMesh](https://github.com/TencentARC/InstantMesh) and [open3d](htt
 | A*   | Refined |
 |------|---------|
 | <img src="./media/astar_wp.png" width="640" height="400"> | <img src="./media/refined_wp.png" width="640" height="400">
-## QnA
+## FAQ
 1. Why not directly ask any VLM to identify the tress? 
 ```
 Technically its possible, but we need to further modified it to make it suitable for our usecase. 
@@ -98,3 +98,24 @@ Please segment all the oil palm trees by drawing a boundary over the crown.
 ```
 ![prompt_image_2](https://github.com/user-attachments/assets/2e96d976-0a67-40be-bc16-bfaa61d77b44)
 
+2. How to get .geotif?
+
+``[Step 1]`` Go to Google Earth, locate the area you need and screenshot it. Afterwards, resize it to 1920x1080. I am using Gimp for this.
+
+``[Step 2]`` Install qgis with apt. Install the Basemap Plugin.
+![Basemap](./media/InstallBasemapPlugin.png)
+
+``[Step 3]`` Load Google Satellite Basemap.
+![Load_Map](./media/LoadGoogleSatelliteBasemap.png)
+
+``[Step 4]`` Set the Coordinate Reference System (CRS).
+![Set_CRS](./media/SetCRS.png)
+
+``[Step 5]`` Open Georeferencer and load the raster image you screenshot in Step1.
+![Set_CRS](./media/Georeferencer.png)
+
+``[Step 6]`` Mark at least 3-5 points
+![Set_CRS](./media/MarkPoints.png)
+
+``[Step 7]`` Run the georeferencer and check the output .tif file
+![Set_CRS](./media/CheckTifOutput.png)
