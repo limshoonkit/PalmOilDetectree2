@@ -1,8 +1,12 @@
 .venv/
+.ipynb_checkpoints/
 dataset/*/tiles*
 notebook/train_outputs
 notebook/eval
+notebook/pretrained_checkpoints
 notebook/sample_data*/tile*
 notebook/mosti_site*/tile*
 notebook/sample_data*/filtered*
 notebook/mosti_site*/filtered*
+
+TuanMee*
