@@ -1,0 +1,37 @@
+[project]
+name = "palm-oil-detectree2"
+version = "0.1.0"
+description = "Palm Oil Detection with Detectree2 and InstantMesh"
+requires-python = "==3.10.*"
+dependencies = [
+    # PyTorch (CUDA 12.6)
+    "torch>=2.7.0",
+    "torchvision>=0.22.0",
+    "torchaudio>=2.7.0",
+    "xformers",
+    # InstantMesh dependencies
+    "pytorch-lightning==2.1.2",
+    "gradio==3.41.2",
+    "huggingface-hub",
+    "einops",
+    "omegaconf",
+    "torchmetrics",
+    "webdataset",
+    "accelerate",
+    "tensorboard",
+    "PyMCubes",
+    "trimesh",
+    "rembg",
+    "transformers==4.34.1",
+    "diffusers==0.20.2",
+    "bitsandbytes",
+    "imageio[ffmpeg]",
+    "xatlas",
+    "plyfile",
+    "nvdiffrast @ git+https://github.com/NVlabs/nvdiffrast/",
+]
+
+[tool.uv]
+extra-index-url = ["https://download.pytorch.org/whl/cu126"]
+no-build-isolation-package = ["nvdiffrast"]
+

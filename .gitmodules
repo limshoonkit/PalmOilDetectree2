@@ -1,0 +1,3 @@
+[submodule "InstantMesh"]
+	path = InstantMesh
+	url = https://github.com/TencentARC/InstantMesh
